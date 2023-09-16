@@ -20,7 +20,7 @@ __Travel Updates:__
 The three primary sources we considered for flight/cab/hotel updates are:
 
 - Travel update emails from travel agencies/airlines/cabs/hotels
-- The integrated API component that fetches the updates from Global Distribution System platforms like SABRE/APollo or directly from the flight/cab/hotel using vendor API services.
+- The integrated API component that fetches the updates from Global Distribution System platforms like SABRE/APOLLO or directly from the flight/cab/hotel using vendor API services.
 - Manual updates
 
 
