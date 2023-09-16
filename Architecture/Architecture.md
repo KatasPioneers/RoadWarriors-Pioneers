@@ -53,8 +53,8 @@ When the user logs in, they can choose the following settings:
 - Grant read access to emails.
   - Grant our application portal access to read emails via their email ID.
 
-- Grant access to forward emails.
-  - Forward the user's emails to our portal mailbox server.
+- Forward emails.
+  - Forward the user's travel emails to our road warrior mailbox server.
 
 # Manual Entries to Dashboard
 
