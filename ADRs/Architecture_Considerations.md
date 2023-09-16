@@ -1,4 +1,4 @@
-Here are 5 important reasons why a microservices and event-driven architecture would be suitable for meeting the specified requirements:
+#Here are 5 important reasons why a microservices and event-driven architecture would be suitable for meeting the specified requirements:
 
 1. **Scalability for High User Base:** With 2 million active users per week and a total of 15 million user accounts, a microservices architecture can efficiently handle the scalability requirements. Each microservice can be independently scaled up or down based on demand, ensuring optimal resource allocation.
 
