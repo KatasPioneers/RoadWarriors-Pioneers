@@ -1,47 +1,28 @@
-Two essential business use cases in the problem statement are :
+Two essential business use cases in the problem statement are:
 
- 
+1. Trip organization
+2. Travel updates
 
-Trip organisation
-Travel updates
+Two primary sources we considered to extract the trip details and travel updates from are:
 
- 
+1. **Travel-related user emails:**
+   In case the user doesn't want to grant read access to an external entity, they can choose to forward their travel-related emails to the Road Warriors mailbox, where the processing of travel-related emails from the respective user is extracted.
 
-Two primary sources we considered to extract the Trip details and travel updates from are:
+2. **Manual entries from the user:**
+   The user can manually enter the details of their reservations directly into the dashboard.
 
- 
+Organized Trip Details:
 
-Travel related user e-Mails :
-   In case the user doesn't want to give read access to an external entity, he can chose to forward his travel related e-mails to Road warriors mailbox
-   where the processing of travel related emails from the respective user is extracted.
-
- 
-
-Manual entries from the user:
-   The user can manually enter the details of his reservations directly in the dashboard.
-
- 
-
- 
-
-Organised trip details:
-
- 
-
-Once the Dashboard has entries pertaining to the reservations through any of the two sources above, the organiser service kicks in to analyse and segregate the reservations and groups them  
-in trips chronologically.
-
+Once the dashboard has entries pertaining to the reservations through any of the two sources above, the organizer service kicks in to analyze and segregate the reservations, grouping them into trips chronologically.
 
 Travel Updates:
 
- 
-
 The three primary sources we considered for flight/cab/hotel updates are:
 
-     - Travel update e-mails from trvel agancies/airlines/cabs/hotels
-     - The Integrated API component that fetches the updates from Global distribution system platforms like SABRE/APollo or directly to the flight/cab/hotel 
-        using vendor api services.
-     - Manual update
+- Travel update emails from travel agencies/airlines/cabs/hotels
+- The integrated API component that fetches the updates from Global Distribution System platforms like SABRE/APollo or directly from the flight/cab/hotel using vendor API services.
+- Manual updates
+
 
 
 ![Architecture](https://github.com/KatasPioneers/RoadWarriors-Pioneers/assets/144905960/c3408c32-bedb-4bb3-a6ad-6f8e48b49cca)
