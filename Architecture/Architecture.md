@@ -35,7 +35,7 @@ Poll email looking for travel-related emails
 Filter and whitelist certain emails
 Customers should be able to add, update, or
 delete existing reservations manually as well.
-
+Items in the dashboard should be able to be grouped by trip, and once the trip is complete, the items should automatically be removed from the dashboard.
 
 
 # User Registration Service
@@ -71,6 +71,14 @@ This service is triggered every 3 minutes to scan user emails.
 This service identifies all travel emails from the server's mailbox concerning the user, filters them, and forwards them to the 'Travel Emails Repository.'
 
 This service is triggered when new emails are forwarded to the mailbox server.
+
+# Reservation Parser Service
+
+From email it has to gather reservation details.
+
+# Trip Organizer Service
+
+Organize reservations into trips. 
 
 __Requirement:__
 The system must interface with the agency’s
