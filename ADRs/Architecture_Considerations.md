@@ -11,9 +11,7 @@
 5. **Interoperability and Integration:** Microservices can seamlessly integrate with existing travel systems like SABRE and APOLLO, as required. Additionally, the event-driven approach allows for easy integration with external systems, such as preferred travel agencies, to facilitate quick problem resolution and international compatibility.
 
 <h5>Why event driven?</h5>
-Incoming travel-related emails are neither continuous processes nor periodic events occurring at regular intervals. They are events resulting from reservations/bookings made on external platforms/apps. Therefore, travel-related emails are considered as triggering points to extract trip-related information and present it on the user's dashboard.
-
-Similarly, manual entries can also be considered as events that can trigger the organizer service."
+Incoming travel-related emails do not follow a continuous or periodic process at regular intervals. Instead, they are events that occur as a result of reservations and bookings made on external platforms or apps. These travel-related emails serve as trigger points within an asynchronous, real-time, and event-driven architecture. They initiate the extraction of trip-related information and its presentation on the user's dashboard. This approach ensures that users receive timely updates and information as events unfold in their travel plans."
 
 By adopting a microservices and event-driven architecture, the system can efficiently handle the high traffic, real-time updates, and diverse functionalities outlined in the requirements while ensuring high availability and a responsive user interface.
 
