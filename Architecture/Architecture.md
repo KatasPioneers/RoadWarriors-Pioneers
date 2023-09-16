@@ -103,13 +103,13 @@ When it comes to updating existing reservations or trip details for users, Road 
 
 In the travel update workflow, the Road Warrior Dashboard interfaces with the following services:
 
-- **Travel Update Parser Service:** Similar to the trip gathering flow, the Travel Email Scan Service polls the user's mailbox every 3 minutes to scan for new travel-related emails and feeds them to the Travel Emails Repository. The Travel Update Parser Service then identifies changes made to reservations and updates the dashboard accordingly.
+- **Email Travel Update Parser Service:** Similar to the trip gathering flow, the Travel Email Scan Service polls the user's mailbox every x minutes (X<5mins) to scan for new travel-related emails and feeds them to the Travel Emails Repository. The Travel Update Parser Service then identifies changes made to reservations and updates the dashboard accordingly.
 
-- **Travel Update Request Service:** This service polls all integrated travel exchanges, including airlines, cabs, hotels, SABRE, and APOLLO, every 3 minutes to request travel updates via their standard APIs. It updates the details in the dashboard.
+- **Travel Agency Update Service:** This service polls all integrated travel exchanges, including airlines, cabs, hotels, SABRE, and APOLLO, every x minutes (X<5mins) to request travel updates via their standard APIs. It updates the details in the dashboard.
 
 - **Manual Updates:** The Road Warrior Dashboard also interfaces with the user, allowing them to update or delete any existing reservation details.
 
-- **Notification Service:** Finally, any travel updates made on the dashboard are notified to the user via SMS and email.
+- **Notification Service:** Finally, any travel updates made on the dashboard are notified to the user via SMS, email and Whatsapp.
 
 __Requirement:__
 Users should also be able to share their trip
