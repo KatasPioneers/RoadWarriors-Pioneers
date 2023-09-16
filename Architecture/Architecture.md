@@ -52,6 +52,9 @@ The three primary sources we considered for flight/cab/hotel updates are:
 
 Poll email looking for travel-related emails
 Filter and whitelist certain emails
+
+
+
 The system must interface with the agency’s
 existing airline, hotel, and car rental interface
 system to update travel details (delays,
