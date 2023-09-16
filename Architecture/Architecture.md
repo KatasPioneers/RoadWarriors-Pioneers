@@ -47,6 +47,9 @@ The three primary sources we considered for flight/cab/hotel updates are:
 ![Architecture](https://github.com/KatasPioneers/RoadWarriors-Pioneers/assets/144905960/c3408c32-bedb-4bb3-a6ad-6f8e48b49cca)
 
 
+![TravelUpdatesWorkflow](https://github.com/KatasPioneers/RoadWarriors-Pioneers/assets/144905960/dcd5a80e-2308-4e22-bfe7-97f14ac70c97)
+
+
 Poll email looking for travel-related emails
 Filter and whitelist certain emails
 The system must interface with the agency’s
@@ -94,4 +97,4 @@ Response time from web (800ms) and mobile
 
 
 
-![TravelUpdatesWorkflow](https://github.com/KatasPioneers/RoadWarriors-Pioneers/assets/144905960/dcd5a80e-2308-4e22-bfe7-97f14ac70c97)
+
