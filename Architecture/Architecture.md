@@ -1,9 +1,9 @@
-Two essential business use cases in the problem statement are:
+**Two essential business use cases in the problem statement are:**
 
 1. Trip organization
 2. Travel updates
 
-Two primary sources we considered to extract the trip details and travel updates from are:
+**Two primary sources we considered to extract the trip details and travel updates from are:**
 
 1. **Travel-related user emails:**
    In case the user doesn't want to grant read access to an external entity, they can choose to forward their travel-related emails to the Road Warriors mailbox, where the processing of travel-related emails from the respective user is extracted.
