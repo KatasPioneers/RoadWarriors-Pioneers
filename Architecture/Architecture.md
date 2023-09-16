@@ -11,11 +11,11 @@ Two primary sources we considered to extract the trip details and travel updates
 2. **Manual entries from the user:**
    The user can manually enter the details of their reservations directly into the dashboard.
 
-Organized Trip Details:
+__Organized Trip Details:__
 
 Once the dashboard has entries pertaining to the reservations through any of the two sources above, the organizer service kicks in to analyze and segregate the reservations, grouping them into trips chronologically.
 
-Travel Updates:
+__Travel Updates:__
 
 The three primary sources we considered for flight/cab/hotel updates are:
 
