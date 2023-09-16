@@ -1,5 +1,5 @@
 # Here are 5 important reasons why a microservices and event-driven architecture would be suitable for meeting the specified requirements:
-
+<h1>Why microservices?</h1>
 1. **Scalability for High User Base:** With 2 million active users per week and a total of 15 million user accounts, a microservices architecture can efficiently handle the scalability requirements. Each microservice can be independently scaled up or down based on demand, ensuring optimal resource allocation.
 
 2. **Real-time Updates:** Microservices can be designed to handle real-time updates efficiently. Event-driven architecture, coupled with microservices, allows the system to react instantly to events like email updates, ensuring that travel information is updated in the app within the specified 5-minute window.
@@ -10,6 +10,7 @@
 
 5. **Interoperability and Integration:** Microservices can seamlessly integrate with existing travel systems like SABRE and APOLLO, as required. Additionally, the event-driven approach allows for easy integration with external systems, such as preferred travel agencies, to facilitate quick problem resolution and international compatibility.
 
+<h1>Why event driven?</h1>
 Incoming travel-related emails are neither continuous processes nor periodic events occurring at regular intervals. They are events resulting from reservations/bookings made on external platforms/apps. Therefore, travel-related emails are considered as triggering points to extract trip-related information and present it on the user's dashboard.
 
 Similarly, manual entries can also be considered as events that can trigger the organizer service."
