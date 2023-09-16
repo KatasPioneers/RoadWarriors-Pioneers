@@ -107,16 +107,79 @@ Items in the dashboard should be able to be
 grouped by trip, and once the trip is complete, the
 items should automatically be removed from the
 dashboard.
+
 Users should also be able to share their trip
 information by interfacing with standard social
 media sites or allowing targeted people to view
 your trip.
+
+Here are the points in a formatted Markdown list:
+
+- **User Authentication:**
+  - Implement user authentication to allow users to connect to their social media accounts securely.
+
+- **User Info Storage:**
+  - Store user information, including social media account details and access tokens, securely in your system.
+
+- **Token Management:**
+  - Handle token expiration and implement token refreshing mechanisms to maintain users' connections to social media platforms.
+
+- **API Integration:**
+  - Integrate with APIs provided by different social media platforms to facilitate data exchange.
+
+- **Posting User Information:**
+  - Use the social media platform APIs to post user information and content as required.
+
+- **Error Handling:**
+  - Implement robust error handling mechanisms to address cases where posts fail to share, providing appropriate feedback to users.
+
+- **Terms of Service Compliance:**
+  - Understand and adhere to the terms of service and policies of the social media platforms to ensure legal and ethical compliance.
+
+- **Front-End Implementation:**
+  - Develop and integrate share buttons into the front-end of your application, allowing users to easily share content on various social media platforms.
+
 Richest user interface possible across all
 deployment platforms
 
 Provide end-of-year summary reports for users
 with a wide range of metrics about their travel
 usage
+
+# Year-End Summary: getTravelSummaryService
+
+- A "Summary" button will be displayed on the Dashboard.
+
+- When clicked, users will be shown their Travel Summary using the following metrics:
+
+  - **Traveling Done Month Wise:** 
+    - Used to deduce the preferred month for travel.
+    - Used to deduce the preferred hotel for stay.
+    - Used to deduce the preferred flight courier for travel.
+    - Used to deduce the preferred cab provider for travel.
+    - Used to deduce the preferred destination for travel.
+    - Used to deduce the preferred type of travel (short trips/long trips/solo/family/group).
+
+
+Must integrate with preferred travel agency for
+quick problem resolution (help me!)
+must work internationally
+
+# Global Help: getHelpService
+
+- The `getHelpService` will be used, which will call `getHelpServiceByAgency` once the Name of the Agency is provided by the User.
+
+- A "Help" button will be displayed on the Dashboard.
+
+- When clicked, the user will be asked for the "Agency Name" they want to contact.
+
+- On providing the "Agency Name," the app will use the corresponding Agency's Contact API to provide Help.
+
+# Help on Each Reservation Line Item: getHelpServiceByAgency
+
+- On clicking the "Help" option from the context menu, the App will use the respective Agency's Contact API for the specific reservation to provide Help.
+
+
 Road Warrior gathers analytical data from users
 trips for various purposes - travel trends, locations,
 airline and hotel vendor preferences, cancellation
@@ -124,9 +187,7 @@ and update frequency, and so on.
 
 must integrate seamlessly with existing travel
 systems (i.e, SABRE, APOLLO)
-Must integrate with preferred travel agency for
-quick problem resolution (help me!)
-must work internationally
+
 
 Users must be able to access the system at all
 times (max 5 minutes per month of unplanned
