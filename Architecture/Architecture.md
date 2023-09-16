@@ -46,7 +46,7 @@ The identity management database is then called to save all the user registratio
 
 # Login Authentication Service
 
-Once a user is registered, they can log in using their credentials. The user's credentials are validated by the identity management system, allowing them to log in.
+Once a user is registered, they can log in using their credentials. The user's credentials are validated by the identity management system(including OpenID Connect), allowing them to log in.
 
 When the user logs in, they can choose the following settings:
 
