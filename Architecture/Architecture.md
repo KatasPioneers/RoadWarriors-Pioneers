@@ -111,13 +111,6 @@ In the travel update workflow, the Road Warrior Dashboard interfaces with the fo
 
 - **Notification Service:** Finally, any travel updates made on the dashboard are notified to the user via SMS and email.
 
-
-__Requirement:__
-Items in the dashboard should be able to be
-grouped by trip, and once the trip is complete, the
-items should automatically be removed from the
-dashboard.
-
 __Requirement:__
 Users should also be able to share their trip
 information by interfacing with standard social
