@@ -33,7 +33,44 @@ The three primary sources we considered for flight/cab/hotel updates are:
 
 Poll email looking for travel-related emails
 Filter and whitelist certain emails
+Customers should be able to add, update, or
+delete existing reservations manually as well.
 
+
+
+# User Registration Service
+
+When a user wants to register for our app 'The Road Warrior,' they must provide specified fields/information via the user registration service interface.
+
+The identity management database is then called to save all the user registration information.
+
+# Login Authentication Service
+
+Once a user is registered, they can log in using their credentials. The user's credentials are validated by the identity management system, allowing them to log in.
+
+When the user logs in, they can choose the following settings:
+
+- Grant read access to emails.
+  - Grant our application portal access to read emails via their email ID.
+
+- Grant access to forward emails.
+  - Forward the user's emails to our portal mailbox server.
+
+# Manual Entries to Dashboard
+
+Users can manually add trip details to the dashboard. The information entered by the user will be processed by the 'Trip Organizer Service' and displayed in the dashboard.
+
+# Travel Email Scan Service
+
+If the user grants access to read emails, this service will scan incoming travel emails from the user's mailbox and filter all trip-related emails, forwarding them to the 'Travel Emails Repository.'
+
+This service is triggered every 3 minutes to scan user emails.
+
+# Target User Email Filter Service
+
+This service identifies all travel emails from the server's mailbox concerning the user, filters them, and forwards them to the 'Travel Emails Repository.'
+
+This service is triggered when new emails are forwarded to the mailbox server.
 
 
 The system must interface with the agency’s
@@ -42,8 +79,6 @@ system to update travel details (delays,
 cancellations, updates, gate changes, etc.).
 Updates must be in the app within 5 minutes of an
 update (better than the competition)
-Customers should be able to add, update, or
-delete existing reservations manually as well.
 
 Items in the dashboard should be able to be
 grouped by trip, and once the trip is complete, the
