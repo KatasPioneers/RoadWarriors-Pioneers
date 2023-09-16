@@ -79,6 +79,8 @@ system to update travel details (delays,
 cancellations, updates, gate changes, etc.).
 Updates must be in the app within 5 minutes of an
 update (better than the competition)
+must integrate seamlessly with existing travel
+systems (i.e, SABRE, APOLLO)
 
 
 # Updating Reservations and Trip Details
@@ -185,8 +187,44 @@ trips for various purposes - travel trends, locations,
 airline and hotel vendor preferences, cancellation
 and update frequency, and so on.
 
-must integrate seamlessly with existing travel
-systems (i.e, SABRE, APOLLO)
+
+# Road Warrior Analytics
+
+Road Warrior performs analytics on both real-time and batch data gathered from various sources, including:
+
+- Trip details from different users
+- Reservation and update details from various Global Distribution Systems (GDS), agencies, and vendors
+
+## Real-Time Data Analysis
+
+Real-time data, such as GPS location from users, is used to assess the status of ongoing trips. This data, collected from multiple users, is processed and analyzed in the backend and presented to the user as various trends, including:
+
+- Number of visitors to a particular tourist spot in a location.
+- Average time spent at a specific spot.
+- Users' restaurant preferences.
+- Users' accommodation preferences.
+- Optimized plans for visiting tourist spots in a particular destination.
+
+Real-time weather updates collected from places on the itinerary can also assist users in making decisions about their upcoming bookings based on changes in weather.
+
+## Batch Data Analysis
+
+Batch data, including users' flight, cab, and hotel preferences, cancellations, and update frequencies, is collected from both users (local database) and GDS, travel agencies, and vendors. This data can be used to identify trends such as:
+
+- Most punctual airlines to a specific destination.
+- Airlines preferred by users for a particular destination.
+- Preferred cab services among users.
+- Preferred hotel preferences for a destination city or, more specifically, a tourist spot, etc.
+
+## Analytical System
+
+The real-time and batch data collected are fed into the analytical system to derive trends in the travel domain. The analytical system consists of:
+
+- An ingest system that collects data from different sources.
+- The ETL (Extract, Transform, Load) component, which processes batch data and loads it into the target data warehouse.
+- Real-time and batch data stored in the data warehouse for further analysis.
+- The analytic engine, which analyzes the data and produces various statistical observations and predictions presented to users' dashboards as trends.
+
 
 
 Users must be able to access the system at all
