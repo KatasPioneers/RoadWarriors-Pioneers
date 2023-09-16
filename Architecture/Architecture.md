@@ -64,7 +64,7 @@ Users can manually add trip details to the dashboard. The information entered by
 
 If the user grants access to read emails, this service will scan incoming travel emails from the user's mailbox and filter all trip-related emails, forwarding them to the 'Travel Emails Repository.'
 
-This service is triggered every 3 minutes to scan user emails.
+This service is triggered every x minutes (where x < 5 mins) to scan user emails. To meet the requirement 'Updates must be in the app within 5 minutes of an update'.
 
 # Target User Email Filter Service
 
