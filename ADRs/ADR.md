@@ -1,3 +1,8 @@
 
 
 ![Architecture_characteristics](https://github.com/KatasPioneers/RoadWarriors-Pioneers/assets/144905960/fbefffaf-5307-43bb-9d20-9a86c3f0d416)
+
+Top driving charactersitics
+1. __Availabilty__ :
+   Availability is an essential aspect in a travel-related app where the user requires real-time updates during their journey. In such a context, minimizing downtime becomes paramount, allowing users to access information at their convenience from any geographical location. To achieve this level of uninterrupted service, we also implement a remote replication service for our database. This ensures maximum availability, enhancing our app's reliability for travelers who rely on timely information and access to essential services throughout their journeys. Our commitment to robust availability is central to delivering a seamless and dependable travel experience. We will customise to have a maximum downtime of 5 minutes/month.
+2. __Interoperability__:
