@@ -80,6 +80,29 @@ cancellations, updates, gate changes, etc.).
 Updates must be in the app within 5 minutes of an
 update (better than the competition)
 
+
+# Updating Reservations and Trip Details
+
+When it comes to updating existing reservations or trip details for users, Road Warrior relies on the following primary sources:
+
+1. **Travel Update Emails:** These emails come from agencies, airlines, cabs, and hotels.
+
+2. **Integrated API Interface:** Road Warrior interfaces with individual airline exchanges, cab services, hotels, and Global Distribution System (GDS) platforms such as SABRE and APOLLO.
+
+3. **Manual Updates:** Users can manually update their reservations and trip details directly on the Road Warrior Dashboard.
+
+In the travel update workflow, the Road Warrior Dashboard interfaces with the following services:
+
+- **Travel Update Parser Service:** Similar to the trip gathering flow, the Travel Email Scan Service polls the user's mailbox every 3 minutes to scan for new travel-related emails and feeds them to the Travel Emails Repository. The Travel Update Parser Service then identifies changes made to reservations and updates the dashboard accordingly.
+
+- **Travel Update Request Service:** This service polls all integrated travel exchanges, including airlines, cabs, hotels, SABRE, and APOLLO, every 3 minutes to request travel updates via their standard APIs. It updates the details in the dashboard.
+
+- **Manual Updates:** The Road Warrior Dashboard also interfaces with the user, allowing them to update or delete any existing reservation details.
+
+- **Notification Service:** Finally, any travel updates made on the dashboard are notified to the user via SMS and email.
+
+
+
 Items in the dashboard should be able to be
 grouped by trip, and once the trip is complete, the
 items should automatically be removed from the
