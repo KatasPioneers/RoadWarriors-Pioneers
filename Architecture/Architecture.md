@@ -30,7 +30,7 @@ The three primary sources we considered for flight/cab/hotel updates are:
 
 ![TravelUpdatesWorkflow](https://github.com/KatasPioneers/RoadWarriors-Pioneers/assets/144905960/dcd5a80e-2308-4e22-bfe7-97f14ac70c97)
 
-
+__Requirement:__
 Poll email looking for travel-related emails
 Filter and whitelist certain emails
 Customers should be able to add, update, or
@@ -72,7 +72,7 @@ This service identifies all travel emails from the server's mailbox concerning t
 
 This service is triggered when new emails are forwarded to the mailbox server.
 
-
+__Requirement:__
 The system must interface with the agency’s
 existing airline, hotel, and car rental interface
 system to update travel details (delays,
@@ -104,18 +104,17 @@ In the travel update workflow, the Road Warrior Dashboard interfaces with the fo
 - **Notification Service:** Finally, any travel updates made on the dashboard are notified to the user via SMS and email.
 
 
-
+__Requirement:__
 Items in the dashboard should be able to be
 grouped by trip, and once the trip is complete, the
 items should automatically be removed from the
 dashboard.
 
+__Requirement:__
 Users should also be able to share their trip
 information by interfacing with standard social
 media sites or allowing targeted people to view
 your trip.
-
-Here are the points in a formatted Markdown list:
 
 - **User Authentication:**
   - Implement user authentication to allow users to connect to their social media accounts securely.
@@ -141,9 +140,10 @@ Here are the points in a formatted Markdown list:
 - **Front-End Implementation:**
   - Develop and integrate share buttons into the front-end of your application, allowing users to easily share content on various social media platforms.
 
+__Requirement:__
 Richest user interface possible across all
 deployment platforms
-
+__Requirement:__
 Provide end-of-year summary reports for users
 with a wide range of metrics about their travel
 usage
@@ -162,7 +162,7 @@ usage
     - Used to deduce the preferred destination for travel.
     - Used to deduce the preferred type of travel (short trips/long trips/solo/family/group).
 
-
+__Requirement:__
 Must integrate with preferred travel agency for
 quick problem resolution (help me!)
 must work internationally
@@ -181,7 +181,7 @@ must work internationally
 
 - On clicking the "Help" option from the context menu, the App will use the respective Agency's Contact API for the specific reservation to provide Help.
 
-
+__Requirement:__
 Road Warrior gathers analytical data from users
 trips for various purposes - travel trends, locations,
 airline and hotel vendor preferences, cancellation
@@ -226,7 +226,7 @@ The real-time and batch data collected are fed into the analytical system to der
 - The analytic engine, which analyzes the data and produces various statistical observations and predictions presented to users' dashboards as trends.
 
 
-
+__Requirement:__
 Users must be able to access the system at all
 times (max 5 minutes per month of unplanned
 downtime)
