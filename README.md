@@ -3,7 +3,7 @@ Tired of managing and tracking your vacations? Have you ever felt frustrated whe
 
 Let us take care of all this hassle for you so that you can enjoy your vacation or trip.
 
-**Road Warriors: Transforming the Travel Experience.** (IN BOLD AND BIGGER FONT)
+<h2>Road Warriors: Transforming the Travel Experience!</h2> 
 
 **Problem Statement:** Build the next-generation online trip management dashboard to allow travelers to view all their existing reservations organized by trip, either online (web) or through their mobile device.
 
